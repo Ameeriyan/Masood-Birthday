@@ -586,7 +586,7 @@ h3,
 
     /* Tagline */
     .header-text .tagline {
-        font-size: 0.9em;
+        font-size: 1.5em;
         line-height: 1.2;
         margin-top: 0.2rem;
         align-content: center;
@@ -595,7 +595,7 @@ h3,
 
     /* Accent text */
     .header-text .accent {
-        font-size: 0.8em;
+        font-size: 1em;
         letter-spacing: 0.7px;
         margin-top: 0.1rem;
     }
@@ -627,7 +627,7 @@ h3,
 
     /* Sticky title refinement */
     #scroll-title.sticky-title {
-        font-size: 0.6em;
+        font-size: 0.8em;
         padding: 4px 10px;
         line-height: 1;
     }
