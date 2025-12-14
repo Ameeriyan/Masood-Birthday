@@ -590,12 +590,12 @@ h3,
         line-height: 1.2;
         margin-top: 0.2rem;
         align-content: center;
-        font-align: center;
+        text-align: center;
     }
 
     /* Accent text */
     .header-text .accent {
-        font-size: 0.4em;
+        font-size: 0.6em;
         letter-spacing: 0.7px;
         margin-top: 0.1rem;
     }
