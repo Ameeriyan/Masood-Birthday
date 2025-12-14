@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Dheeraj❣️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./logo.png" alt="Logo">
+            </div>
+
+            <!-- Title -->
+            <div class="header-text">
+                <h1>
+                    <span id="scroll-title">HAPPIEST BIRTHDAY YAARO❤️</span>
+                </h1>
+                <p class="tagline">I hope this surprise will be the Biggest Memory of yours...</p>
+                <p class="accent">Let’s Rock Together LifeTime 🫂💥</p>
+            </div>
+
+            <button class="music-btn" id="musicBtn">
+                ▶
+            </button>
+
+            <audio id="bgMusic" preload="auto" loop>
+                <source src="./Audio.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+    </header>
+
+    <!-- Background Music -->
+    <audio id="bg-music" src="./birthday-music.mp3" loop></audio>
+
+    <section class="hero">
+        <img src="./NavBar2.jpg" alt="Happy Birthday" class="hero-img">
+        <div class="overlay">
+            <h2>You're the Best!</h2>
+            <button onclick="showMessage()">Click for a Surprise</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Memories Together</h2>
+        <div class="gallery-container">
+            <img src="./Memory1.jpg" alt="Memory 1" class="gallery-img">
+            <img src="./Memory2.jpg" alt="Memory 2" class="gallery-img">
+            <img src="./Memory3.jpg" alt="Memory 3" class="gallery-img">
+            <img src="./Memory4.jpg" alt="Memory 4" class="gallery-img">
+        </div>
+    </section>
+
+    <section class="message hidden" id="surprise">
+        <h2>🎉🎈 Surprise! 🎈🎉</h2>
+        <p>Love You So Much Bhai❤️❤️❤️</p>
+        <img src="./LetterPhoto.jpg" alt="Birthday Cake" class="message-img">
+        <p>This is for sure - I care for you a lot, maybe even more than you care for yourself.</p>
+        <p>Once Again A Very Happy Birthday Jaan❣️</p>
+
+        <!-- New Button to Reveal Letter -->
+        <button onclick="revealLetter()" class="reveal-btn">Reveal a Special Letter</button>
+
+        <!-- Hidden Letter -->
+        <div id="letter" class="hidden letter-content">
+            <h3>My Dearest Masood Bhai💎,</h3>
+            <p>We may have found our closeness a little later than expected, but I truly believe that Almighty knew
+                exactly what He was doing when He brought us together. From the very first moment, our connection was
+                perfect and over time, It has grown into something very special.</p>
+            <p>Our friendship is more than just a bond.. It is a deep, unbreakable connection that I am forever grateful
+                for.</p>
+            <p>Your presence in my life is a gift I cherish every day. Each moment we spend together is always special
+                and I pray god to create many more adventures and memories together for us.</p>
+            <p>I have said it many times before and I will say it again that you are more than a <b>Brother❤️</b> to me.
+            </p>
+            <p>Thank you for being the amazing person you are. I hope we will always be there for each other, no matter
+                where life takes us. Here’s to many more unforgettable moments, endless chats and a lifetime of
+                happiness together.</p>
+            <p>With all my love,</p>
+            <p><b>Your's Sajju❤‍🔥</b></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <p><b>With love from</b></p>
+        <div class="name-stamp" aria-hidden="true">
+            <span>MaSooD RiYaN</span>
+        </div>
+        <!-- <div class="signature">Masood RiYaN</div> -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

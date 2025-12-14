@@ -1,0 +1,579 @@
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+.overlay h2,
+#scroll-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sticky Header */
+.header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(115deg, #ff3b3b, #ff6b6b);
+}
+
+#scroll-title {
+    display: inline-block;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+/* When scrolling */
+#scroll-title.sticky-title {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+
+    background: linear-gradient(135deg, #fff7e6, #ffe6e6);
+    padding: 8px 18px;
+    border-radius: 999px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(244, 16, 16, 0.12);
+
+    color: #b02a2a;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+    /* smaller font */
+    font-weight: 800;
+}
+
+/* Header Layout */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2rem 1.2rem;
+    /* balanced height */
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 230%;
+    height: 230%;
+    object-fit: cover;
+}
+
+/* Header */
+.header {
+    position: relative;
+    background: linear-gradient(135deg, #ff3b3b, #ff6b6b);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 3px solid #ff6b6b;
+}
+
+/* Header Text */
+.header-text {
+    text-align: center;
+    flex: 2;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    /* BIGGER but controlled */
+    font-weight: 700;
+    /* VISUAL POWER */
+    letter-spacing: 0.5px;
+}
+
+.header-text .tagline {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+.header-text .accent {
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /*opacity: 0.85;*/
+}
+
+.header-text p {
+    margin-top: 8px;
+    font-size: 1rem;
+
+}
+
+/* Music Button */
+.music-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    color: #ff3b3b;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header-inner {
+        padding: 0.3rem 0.8rem;
+    }
+
+    .header-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .header-text .tagline {
+        font-size: 1rem;
+    }
+
+    .header-text .accent {
+        font-size: 0.8rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    /* height: 100vh;
+    /* full viewport height */
+    text-align: center;
+    margin-bottom: 0.8rem;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    /* you can tweak this for focal point */
+    display: block;
+    border-bottom: 8px solid #ff3b3b;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 300px;
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* Enhanced Button */
+.overlay button {
+    background: linear-gradient(135deg, #ff3b3b, #e64545);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.overlay button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.overlay button:active {
+    background: linear-gradient(135deg, #e22d2d, #ff3b3b);
+}
+
+/* New Button in Surprise Box */
+.reveal-btn {
+    background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+    border: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.reveal-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.reveal-btn:active {
+    background: linear-gradient(135deg, #ff3b3b, #e22d2d);
+}
+
+/* Hidden Letter Content */
+.letter-content {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.letter-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff3b3b;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Apply random height differences to images */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 6px 6px 1px rgb(128, 116, 116);
+    object-fit: cover;
+    /* ADD THIS LINE */
+}
+
+/* Default height for images */
+.gallery-img:nth-child(odd) {
+    height: 480px;
+    /* Adjust as needed */
+}
+
+.gallery-img:nth-child(even) {
+    height: 580px;
+    /* Adjust as needed */
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Message Section */
+.message {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 80%;
+    position: relative;
+}
+
+.message-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.footer {
+    background: #ff2b2b;
+    color: white;
+    text-align: center;
+    padding: 32px 16px;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+    /* controlled small gap */
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Footer center name stamp */
+.name-stamp {
+    margin: 0;
+    display: inline-block;
+    margin: 24px auto 0 auto;
+
+    background: linear-gradient(135deg, #fff7e6, #ffe6e6);
+    padding: 8px 18px;
+    border-radius: 999px;
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    border: 2px solid rgba(255, 43, 43, 0.12);
+
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: #b02a2a;
+    font-size: 0.95rem;
+
+    pointer-events: none;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+
+    .header-inner {
+        padding: 0.4rem 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .header-text .tagline {
+        font-size: 1.5rem;
+    }
+
+    .header-text p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 230%;
+        height: 230%;
+        object-fit: cover;
+    }
+
+    .music-btn {
+        width: 100px;
+        height: 100px;
+        font-size: 1.7rem;
+    }
+
+    .hero-img {
+        height: auto;
+        max-height: 75vh;
+    }
+
+    .overlay {
+        width: 90%;
+    }
+
+    .gallery {
+        margin-top: 0;
+        /* remove extra top margin */
+        padding-top: 1rem;
+        /* optional minimal spacing */
+    }
+
+    .gallery h2 {
+        font-size: 1.8rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .gallery-img:nth-child(odd) {
+        height: 340px;
+    }
+
+    .gallery-img:nth-child(even) {
+        height: 410px;
+    }
+}
+
+/* For smartphones */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1.7rem;
+    }
+
+    .hero-img {
+        height: auto;
+        /* let image scale naturally */
+        max-height: 60vh;
+        /* optional: limit height for very tall screens */
+    }
+
+    .logo {
+        width: 95px;
+        height: 95px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 200%;
+        height: 200%;
+        object-fit: cover;
+    }
+
+    .music-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.7rem;
+    }
+
+    #scroll-title.sticky-title {
+        top: 5px;
+        font-size: 1.2rem;
+        /* slightly smaller */
+        padding: 6px 12px;
+        /* less padding */
+    }
+
+    /* Move overlay below image and center it */
+    .overlay {
+        position: static;
+        margin: 1rem auto;
+        width: 100%;
+        /* Ensure it doesn't overflow the screen */
+        padding: 1.7rem;
+        transform: none;
+        box-sizing: border-box;
+        /* Include padding in width calculation */
+    }
+
+    .overlay h2 {
+        font-size: 2rem;
+    }
+
+    .overlay button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .gallery {
+        margin-top: 0;
+        padding-top: 0.5rem;
+        /* optional minimal spacing */
+    }
+
+    .gallery h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    /* Adjust heights for mobile view */
+    .gallery-img:nth-child(odd) {
+        height: 260px;
+        /* Adjust as needed */
+    }
+
+    .gallery-img:nth-child(even) {
+        height: 320px;
+        /* Adjust as needed */
+    }
+}
+
+@media (max-width: 480px) {
+    #scroll-title.sticky-title {
+        top: 5px;
+        font-size: 0.9rem;
+        padding: 4px 10px;
+    }
+}
+
+/* Floating Heart Animation */
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: red;
+    font-size: 20px;
+    animation: floatHeart 4s linear infinite;
+    pointer-events: none;
+    z-index: 8000;
+}
