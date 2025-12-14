@@ -579,7 +579,7 @@ h3,
 
     /* Title */
     .header-text h1 {
-        font-size: clamp(1em, 5vw, 2em);
+        font-size: clamp(1.2em, 5vw, 2em);
         line-height: 1.2;
         margin-bottom: 0.2rem;
     }
