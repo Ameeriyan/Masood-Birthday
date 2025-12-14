@@ -595,7 +595,7 @@ h3,
     /* Accent text */
     .header-text .accent {
         font-size: 0.4em;
-        letter-spacing: 1px;
+        letter-spacing: 0.7px;
         margin-top: 0.1rem;
     }
 
@@ -626,7 +626,7 @@ h3,
 
     /* Sticky title refinement */
     #scroll-title.sticky-title {
-        font-size: 0.7em;
+        font-size: 0.4em;
         padding: 4px 10px;
         line-height: 1;
     }
