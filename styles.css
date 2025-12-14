@@ -634,6 +634,17 @@ h3,
     }
 }
 
+@media (max-height: 600px) {
+    .footer {
+        padding: 0.6rem 1rem;
+    }
+
+    .name-stamp {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+}
+
 /* Floating Heart Animation */
 @keyframes floatHeart {
     0% {
