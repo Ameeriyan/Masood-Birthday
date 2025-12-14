@@ -361,6 +361,10 @@ h3,
     padding: 1rem;
     position: relative;
     bottom: 0;
+
+    /* FIX-1 (add these) */
+    height: auto;
+    min-height: auto;
 }
 
 .footer p {
